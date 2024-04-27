@@ -35,11 +35,11 @@ The User module caters to guests who interact with the system to make reservatio
 <br><br>
 <h3><B><U>Getting Started</U></B></h3>
 To get started with Hotel Ayodhya Management System, follow these steps:<br>
-<ul>
+<Ul>
   <li><B>Clone the Repository:</B> Clone this repository to your local machine using git clone https://github.com/your-username/hotel-ayodhya.git</li>
   <li><B>Setup Database: </B>Import the database schema provided in database.sql to set up the database structure.</li>
   <li><B>Configure Database Connection:</B>Update the database connection settings in the configuration file (config.php) to match your database credentials.</li>
   <li><B>Deploy:</B> Deploy the project on your local server (e.g., Apache, Nginx, etc.).</li>
   <li><B>Access the Application:</B> Open your web browser and navigate to the URL where the project is deployed.</li>
   <li><B>Login:</B> Use the provided login credentials for each module to access the respective functionalities.</li>
-</ul>
+</Ul>
