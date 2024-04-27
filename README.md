@@ -31,5 +31,5 @@ The User module caters to guests who interact with the system to make reservatio
 
 <img src="https://github.com/PavanSacharya/Hotel-Ayodhya/assets/159934757/283424bc-3b4b-4072-b42f-78faec723ce3" alt="hotel" width="500" height="300">
 
-<img src="https://github.com/PavanSacharya/Hotel-Ayodhya/assets/159934757/d390bb60-8f66-4676-bef0-dc6c32a3cff8" alt="hotel" width="200" height="500">
+<img src="https://github.com/PavanSacharya/Hotel-Ayodhya/assets/159934757/d390bb60-8f66-4676-bef0-dc6c32a3cff8" alt="hotel" width="200" height="300">
 
