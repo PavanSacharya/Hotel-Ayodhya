@@ -2,7 +2,7 @@
 
 <h6>Hotel Ayodhya Management System is a comprehensive software solution designed for efficient management of hotel operations. This system consists of three main modules: Admin, Employee, and User. Each module serves a specific purpose to streamline various tasks associated with hotel management.</h6>
 
-<h3><B>Modules</B</h3>
+<h3><B></B>Modules</B></h3>
 1. <h5><B>Admin Module</B></h5>
 The Admin module provides functionalities for administrators to manage the entire system. Key features include:
 <ul>
@@ -11,7 +11,7 @@ The Admin module provides functionalities for administrators to manage the entir
   <li>View and generate reports</li>
   <li>Set permissions and access levels for employees</li>
 </ul>
-2. <h3><B>Employee Module</B>/h3>
+2. <h3><B>Employee Module</B></h3>
 The Employee module is tailored for hotel staff to handle daily operations smoothly. It includes features such as:
 <ul>
   <li>Check-in and check-out guests</li>
