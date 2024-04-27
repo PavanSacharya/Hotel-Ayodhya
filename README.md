@@ -34,7 +34,7 @@ The User module caters to guests who interact with the system to make reservatio
 <img src="https://github.com/PavanSacharya/Hotel-Ayodhya/assets/159934757/d390bb60-8f66-4676-bef0-dc6c32a3cff8" alt="hotel" width="200" height="300">
 <br><br>
 <h3><B><U>Getting Started</U></B></h3>
-To get started with Hotel Ayodhya Management System, follow these steps:
+To get started with Hotel Ayodhya Management System, follow these steps:<br>
 <ul>
   <li><B>Clone the Repository:</B> Clone this repository to your local machine using git clone https://github.com/your-username/hotel-ayodhya.git</li>
   <li><B>Setup Database: </B>Import the database schema provided in database.sql to set up the database structure.</li>
