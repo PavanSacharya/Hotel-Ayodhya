@@ -1,0 +1,139 @@
+<?php 
+include("sqlcon.php");
+session_start();
+error_reporting(0);
+
+if(isset($_POST['btnreg']))
+{
+	$qry  = "insert into employee(empid,empname,gender,designation,salary,emailid,password,contact_no,address,status) values('".$_POST['empid']."','".$_POST['empname']."','".$_POST['gender']."','".$_POST['designation']."','".$_POST['salary']."','".$_POST['emailid']."','".$_POST['password']."','".$_POST['contact_no']."','".$_POST['address']."','Active')"; 
+	
+	if(mysqli_query($con,$qry))
+	{
+		echo "<script>alert('Registration Success!!!');window.location='viewemployee.php';</script>";
+	}
+}
+
+
+?>
+<?php include("header.php"); ?>
+		
+		<!--header-->
+		<!--banner-->
+		<div class="banner1">
+			<div class="container">
+				<h3><a href="index.html">Home</a> / <span> Employee Registration</span></h3>
+			</div>
+		</div>
+	<!--banner-->
+
+<div class="content">
+				<!--login-->
+			<div class="login">
+		        <div class="main-agileits">
+				    <div class="form-w3agile form1">
+						<h3>Employee Registration</h3>
+							<form action="" method="post">
+							<div class="form-group">
+								<label for="seller_Name">Employee ID</label>
+								<input type="text" class="form-control" id="empid" placeholder="Enter ID" name="empid" required pattern="[0-9]{1,20}" title="please enter only numbers less than 21" >
+							 </div>
+							
+							 <div class="form-group">
+								<label for="seller_Name">Employee Name</label>
+								<input type="text" class="form-control" id="empname" placeholder="Enter name" name="empname" required pattern="[a-zA-Z _]{4,15}" title="please enter only character  between 4 to 15 for employee name" >
+							 </div>
+                             <div class="form-group">
+	                            <label for="seller_Name">Gender</label>&nbsp;&nbsp
+	                            <input name="gender" type="radio" value="Male" />Male
+                                <input type="radio" name="gender" value="Female" />Female
+                             </div>
+                             <div class="form-group">
+								<label for="seller_Name">Designation</label>
+								<input type="text" class="form-control" id="designation" placeholder="Enter designation" name="designation" required >
+							 </div>
+							 <div class="form-group">
+								<label for="seller_Name">Basic Salary</label>
+								<input type="text" class="form-control" id="salary" placeholder="Enter Basic Salary" name="salary" required >
+							 </div>
+							 <div class="form-group">
+								<label for="seller_Name">Email Id</label>
+								<input type="email" class="form-control" id="emailid" placeholder="Enter email" name="emailid" required>
+							</div>
+							<div class="form-group">
+								<label for="seller_Name">Contact Number</label>
+								<input type="text" class="form-control" id="contact_no" placeholder="Enter Contact Number" name="contact_no" required pattern="[0-9]{10,11}" title="please enter only numbers between 10 to 11 for contact no." min="7000000000" max="9999999999" >
+                                 </div>
+                              
+							
+							<div class="form-group">
+                                <label for="seller_Name">Address</label>
+                                <textarea class="form-control" id="address" placeholder="Enter Address" name="address" required ></textarea>
+                                </div>
+							<div class="form-group">
+								<label for="seller_Name">Password</label>
+								<input type="password" class="form-control" id="txtpassword" placeholder="Enter Password" name="password" required pattern="[a-zA-Z0-9]{6,16}" title="please enter only character or numbers between 6 to 16 for password">
+							</div>
+							 <div class="form-group">
+								<label for="seller_Name">Confirm Password</label>
+								<input type="password" class="form-control" id="txtconfirmpassword" placeholder="Enter Confirm Password" name="Confirmpassword" required pattern="[a-zA-Z0-9]{6,16}" title="please enter only character or numbers between 6 to 16 for password">
+							</div>
+							 
+							<input type="submit" name="btnreg" value="Submit" id="btnreg" class="btn btn-primary" onclick="return Validate();"/>&nbsp;
+							<input type="reset" name="btnreset" value="Reset" class="btn btn-primary"/>
+							</form>
+ </div>
+			    </div>
+		    </div>
+				<!--login-->
+		</div>
+		<!--content-->
+		<!---footer--->
+			<?php 
+			include("footer.php");
+			?>
+</body>
+</html>
+<script>
+function ValidateName(){
+	var name = document.getElementById("FullName").value;
+	//alert(name);
+	var lblError = document.getElementById("lblError");
+	lblError.innerHTML = "";
+	var expr = /^[a-zA-Z]*$/;
+	if(!expr.test(name)) {
+		lblError.innerHTML = "Invalid name";
+	}
+}
+function ValidateEmail(){
+	//alert();
+	var name = document.getElementById("EmailID").value;
+	//alert(name);
+	var lblError = document.getElementById("lblError1");
+	lblError.innerHTML = "";
+	var expr = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+	if(!expr.test(name)) {
+		lblError.innerHTML = "Invalid email address";
+	}
+}
+function Validatephno() {
+					//alert();
+					var name = document.getElementById("ContactNo").value;
+					var lblError = document.getElementById("lblErrorpno");
+					lblError.innerHTML = "";
+					var expr = /^\d{8}$/;
+					if (!expr.test(name)) {
+						lblError.innerHTML = "Invalid phone no.";
+							}
+						}
+function Validate() {
+					 var password = document.getElementById("txtpassword").value;
+					 var confrimpassword = document.getElementById("txtconfirmpassword").value;
+					 if(password != confrimpassword){
+					 	alert("Passwords does not match");
+					 	return false;
+					 } 
+                     return true;
+					}
+</script>
+
+

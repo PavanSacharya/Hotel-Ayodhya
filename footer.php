@@ -1,0 +1,70 @@
+<!---footer--->
+					<div class="footer-w3l">
+						<div class="container">
+							<div class="footer-grids">
+								<div class="col-md-3 footer-grid">
+									<h4><color="blue"> About </h4>
+									<p>Hotel Ayodhya offers High Class, Luxury services and staying facilities in the city of Udupi.</p>
+									<div class="social-icon">
+										<a href="#"><i class="icon"></i></a>
+										<a href="#"><i class="icon1"></i></a>
+										<a href="#"><i class="icon2"></i></a>
+										<a href="#"><i class="icon3"></i></a>
+									</div>
+								</div>
+								<div class="col-md-3 footer-grid">
+									<h4>My Account</h4>
+									<ul>
+										
+										<li><a href="login.php">Admin/Employee Login</a></li>
+                                        <li><a href="registration.php">New User</a></li>
+									</ul>
+									<h4> Other Information</h4>
+									<ul>
+										<li><a href="index.php">Home</a></li>
+										<!--<li><a href="rooms.php">Rooms</a></li>-->
+										
+										
+									</ul>
+								</div>
+								<div class="col-md-3 footer-grid">
+								<h4>Contacts</h4>
+									<ul>
+										<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i><a><a href="mailto:hotelayodhya123@gmail.com">hotelayodhya123@gmail.com</a></li>
+										<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i><a>+91-8970931564</a></li>
+										<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:pavanachar0123@gmail.com">pavanacharya0123@gmail.com</a></li>
+										
+									</ul>
+									
+								</div>
+								<div class="col-md-3 footer-grid foot">
+									 <div id="map"></div>
+								</div>
+							<div class="clearfix"> </div>
+							</div>
+							
+						</div>
+					</div>
+					<script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+ // var uluru = {lat: 13.340, lng: 74.742};
+  var uluru =new google.maps.LatLng(13.340,74.742);
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 5, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvYHi8Z3YFfuWBVqhI0pxz59nCf6HnedI&callback=initMap">
+    </script>
+					<!---footer--->
+					
