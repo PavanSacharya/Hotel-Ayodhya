@@ -27,7 +27,8 @@ The User module caters to guests who interact with the system to make reservatio
   <li>View past reservations and invoices</li
 </Ul><br><br>
 <img src="https://github.com/PavanSacharya/Hotel-Ayodhya/assets/159934757/7962e37c-fcd4-468c-819c-029a53eadefd" alt="hotel" width="700" height="500">
+<br>
 
-
+<img src="https://github.com/PavanSacharya/Hotel-Ayodhya/assets/159934757/283424bc-3b4b-4072-b42f-78faec723ce3" alt="hotel" width="500" height="300">
 
 
